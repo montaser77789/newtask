@@ -1,0 +1,107 @@
+/* استايلات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif; /* خط مناسب باللغة العربية */
+    color: #0017c2;
+}
+
+a {
+    text-decoration: none;
+    color: #0017c2;
+}
+
+body {
+    background-color: #f4f4f4; /* لون خلفية ناعم */
+}
+
+/* استايلات العناوين */
+.title h2 {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 2vw; /* حجم نسبي يعتمد على عرض الشاشة */
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* استايلات الأزرار */
+.parent-btn {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* مركزية الزر في منتصف الشاشة */
+.center-btn-container {
+    display: flex;
+    justify-content: center; /* لمحاذاة العناصر أفقيًا */
+    align-items: center; /* لمحاذاة العناصر عموديًا */
+    width: 100%; /* عرض كامل الشاشة */
+    background-color: #f4f4f4; /* لون خلفية ناعم */
+}
+
+.button {
+    background: linear-gradient(to right, #0017c2, #000b5c);
+    color: white;
+    width: 100%;
+    max-width: 186px;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #000b5c, #0017c2);
+}
+
+.button:hover {
+    background: linear-gradient(to right, #000b5c, #0017c2);
+}
+
+/* استايلات الصور */
+.image-container {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+/* تحسين التجاوب */
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 4vw; /* حجم النص يصبح أصغر على الشاشات الصغيرة */
+    }
+
+    .button {
+        font-size: 0.9rem;
+        max-width: 150px;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 5vw; /* زيادة التكيف للشاشات الصغيرة جدًا */
+    }
+
+    .button {
+        font-size: 0.8rem;
+        max-width: 120px;
+        height: 2.8rem;
+    }
+}
