@@ -13,7 +13,8 @@ a {
 }
 
 body {
-    background-color: #f4f4f4; /* لون خلفية ناعم */
+    background-color: #f4f4f4; 
+    padding-bottom: 30px;
 }
 
 /* استايلات العناوين */
