@@ -6,6 +6,9 @@
     font-family: 'Cairo', sans-serif; /* خط مناسب باللغة العربية */
     color: #0017c2;
 }
+html {
+    scroll-behavior: smooth; /* إضافة تأثير التمرير الناعم */
+  }
 
 a {
     text-decoration: none;
